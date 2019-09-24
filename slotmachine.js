@@ -1,6 +1,6 @@
 let money = 100;
 
-const slotMachine = () => {
+const 1slotMachine = () => {
 
     const weels = {
         first: [1,1,1,2,2,2,3,3,3];
