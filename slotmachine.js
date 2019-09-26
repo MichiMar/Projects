@@ -1,38 +1,45 @@
-let money = 100;
+const totalmoney = document.querySelector(".totalMoney");
+const newMoneyInput = document.querySelector("#newMoney");
+totalmoney = parseInt(totalmoney);
+newMoneyInput = parseInt(newMoneyInput);
 
-const 1slotMachine = () => {
+//const addMoneyBtn = document.querySelector("#addMonney");
+//const retireMoneyBtn = document.querySelector("#retire");
+const numbers = document.querySelector(".numbers");
+//const playBtn = document.querySelector("#playBtn");
 
-    const weels = {
-        first: [1,1,1,2,2,2,3,3,3];
-        second:[1,1,2,2,3,3];
-        third: [1,2,3]
+wallet = () => {
+    // input += money
+    function addMoneyBtn() {
+        totalmoney.innerHTML = totalmoney+newMoneyInput;
+        return addMoneyBtn();
     }
-
-    const money = (money) => {
-        newMoney = money + 1
-    }
-
-    function twist () {
-        if (wallet >= 5) {
-            let rand = Math.random(weels.keys)
-        } else {
-            alert("you don't have enought coins")
-        }
-
-        const weelOne = (f) =>{
-            f = Math.random()*weels[0].lenght;
-            return f;
-        }
-        let weelTwo = (s) => {
-            s = Math.random()*weels[1].lenght;
-            return s;
-        }
-        let weelThree = (t) => {
-            t = Math.random()*weels[2].lenght;
-            return t;
-        }
-
-    }
+    
+    function retireMoneyBtn() {
+        totalmoney.innerHTML = totalmoney-newMoneyInput;
+        return retireMoneyBtn()
+    } 
 }
 
-slotMachine();
+function game() {
+    if (money >= 10) {
+        const jackpot = document.getElementById("playBtn");
+        jackpot = () => {
+            const bet = totalmoney - 10;
+        }
+        //play == random numbers
+        if (playBtn() == true) {
+            
+            numbers.forEach(number => {
+                number=Math.random() * 100;
+            if (number !== number) {
+                return alert("Bad luck, try again!!")
+            } else {
+                totalmoney = totalmoney+bet;
+                return alert('WIIINEEEEER!, YOU REALLY ARE LUCKY TODAY, PLAY AGAIN!!')
+            }
+        })
+    
+    }
+        }
+}

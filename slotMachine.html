@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+</head>
+
+<script type="text/javascript" src="/slotmachine.js"></script>
+
+<style>
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    font-size: 7em;
+    margin: 0px;
+}
+
+.numbers > p {
+    margin: 0px;
+}
+</style>
+
+<body>
+    <div class="heading">
+        <h1>Casino Bottega</h1>
+    </div>
+
+    <div class="instruccions">
+        <h3>Welcome to Casino Bottega.</h3>
+        <h3> Game: Slot Machine</h3> 
+    </div>
+
+    <div class="money">
+        <p>
+            Wallet: $ <span class="totalMoney">100</span>
+        </p>
+        <input type="text" id="newMoney">
+        <p></p>
+
+        <div class="buttonWrapper">
+            <button id="addMoney" onclick="addMoney()">Add</button>
+            <button id="retire" onclick="retireMoney()">Retire</button>
+        </div>      
+    </div>
+
+    <hr>
+
+    <h3>LET'S PLAY !!!</h3>
+
+    <div class="numbers">
+        <p id="One"> - </p>
+        <p id="Two"> - </p>
+        <p id="Three"> - </p>
+    </div>
+
+    <button id="playBtn" onclick="playBtn()">Start</button>
+
+</body>
+  
+<script>
+
+
+</script>
+
+</html>
