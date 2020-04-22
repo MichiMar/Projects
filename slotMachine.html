@@ -65,7 +65,7 @@
 
     const numbers = document.querySelector(".numbers");
 
-    wallet = () => {
+    const wallet = () => {
         // input += money
         function addMoney() {
             totalmoney.innerHTML = totalmoney+newMoneyInput;
@@ -90,7 +90,7 @@
                 numbers.forEach(number => {
                     number=Math.random() * 100;
                     if (number !== number) {
-                        return alert("Bad luck, try again!!")
+                        return alert("Bad luck, try again!!");
                     } else {
                         totalmoney = totalmoney+bet;
                         return alert('WIIINEEEEER!, YOU REALLY ARE LUCKY TODAY, PLAY AGAIN!!')
